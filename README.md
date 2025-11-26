@@ -21,3 +21,40 @@ Socio-Economic Class: There was a clear correlation between wealth and safety. F
 Age Distribution: A Kernel Density Estimate (KDE) plot highlighted that children (ages 0–10) had a higher probability of survival, whereas the highest death toll was observed among young adults aged 20–30.
 
 4. Conclusion This analysis conclusively demonstrates that survival on the Titanic was not a matter of chance. It was heavily determined by gender, class, and age. The data proves that social hierarchy and emergency protocols played a definitive role in who survived the tragedy.
+output: Dataset Loaded Successfully
+Shape: (891, 12) (Rows, Columns)
+
+First 5 Rows:
+   PassengerId  Survived  Pclass                                               Name     Sex   Age  SibSp  Parch            Ticket     Fare Cabin Embarked    
+0            1         0       3                            Braund, Mr. Owen Harris    male  22.0      1      0         A/5 21171   7.2500   NaN        S    
+1            2         1       1  Cumings, Mrs. John Bradley (Florence Briggs Th...  female  38.0      1      0          PC 17599  71.2833   C85        C    
+2            3         1       3                             Heikkinen, Miss. Laina  female  26.0      0      0  STON/O2. 3101282   7.9250   NaN        S    
+3            4         1       1       Futrelle, Mrs. Jacques Heath (Lily May Peel)  female  35.0      1      0            113803  53.1000  C123        S    
+4            5         0       3                           Allen, Mr. William Henry    male  35.0      0      0            373450   8.0500   NaN        S    
+
+Missing Values Check:
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age            177
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+
+ Data Cleaning Complete. Remaining columns:
+['Survived', 'Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']
+
+Overall Survival Rate: 38.38%
+Overall Death Rate: 61.62%
+C:\Users\Admin\Music\axcentra ds python\code 4.py:49: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same 
+effect.
+
+  sns.countplot(data=df, x='Survived', palette='pastel')
